@@ -1,0 +1,16 @@
+{
+    "rust-analyzer.serverPath": "~/.cargo/bin/rust-analyzer",
+    "snippets.priority": 99,
+    "languageserver": {
+        "rust": {
+            "disableSnippetCompletion": true,
+            "command": "rust-analyzer",
+            "filetypes": [
+                "rust"
+            ],
+            "rootPatterns": [
+                "Cargo.toml"
+            ]
+        }
+    }
+}

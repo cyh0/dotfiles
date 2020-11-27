@@ -1,0 +1,26 @@
+# priority 10  # it is not work
+
+# Definition
+snippet def
+(define (${1:name})
+   (${0:definition}))
+endsnippet
+
+# Definition with lambda
+snippet defl
+(define ${1:name}
+  (lambda (x)(${0:definition})))
+endsnippet
+
+# Condition
+snippet cond
+(cond ((${1:predicate}) (${2:action}))
+   	  ((${3:predicate}) (${0:action})))
+endsnippet
+
+# If statement
+snippet if
+(if (${1:predicate})
+	(${2:true-action})
+	(${0:false-action}))
+endsnippet
