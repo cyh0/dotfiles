@@ -2,13 +2,13 @@
 
 # initiation
 current_path=$(cd `dirname $0`; pwd)
-backup_path="$current_path/backup/"
-if [ ! -d "$backup_path"];then
+backup_path="$current_path/backup"
+
+if [ ! -d "$backup_path" ];then
     # if not exit, create it
     mkdir "$backup_path"
 else
-    # if exit, clean it
-    rm "$backup_path/*"
+    rm -rf "$backup_path" && mkdir "$backup_path"
 fi
 
 # create link, if file exited, remove or backup it
