@@ -44,6 +44,5 @@ create_link "$current_path/coc/ultisnips" "$HOME/.config/coc/ultisnips" "ultisni
 create_link "$current_path/nvim" "$HOME/.config/nvim" "nvim.bak"
 # cargo
 create_link "$current_path/cargo/config" "$HOME/.cargo/config" "cargoconfig.bak"
-# zsh
-create_link "$current_path/zsh/.zshrc" "$HOME/.zshrc" "zshrc.bak"
-create_link "$current_path/zsh/change_theme.zsh" "$HOME/.zsh/change_theme.zsh" "change_theme.bak"
+# bash
+create_link "$current_path/bash/.bashrc" "$HOME/.bashrc" "bashrc.bak"

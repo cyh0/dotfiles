@@ -1,16 +1,25 @@
-###########################################################        
-# Options for Zsh
- 
-export HISTFILE=~/.zsh_history
-export HISTSIZE=50000
-export SAVEHIST=50000
-eval `dircolors -b`
- 
-autoload -U compinit compinit
- 
-# PS1 and PS2
-export PS1="$(print '%{\e[0;34m%}%~%{\e[0m%}') "
-export PS2="$(print '%{\e[0;34m%}>%{\e[0m%}')"
+#!/usr/bin/env bash
+
+# If not running interactively, don't do anything
+case $- in
+  *i*) ;;
+    *) return;;
+esac
+
+# Path to the bash it configuration
+export BASH_IT="/home/cyh/.bash_it"
+
+# Lock and Load a custom theme file.
+# Leave empty to disable theming.
+# location /.bash_it/themes/
+export BASH_IT_THEME='simple'
+
+# Don't check mail when opening terminal.
+unset MAILCHECK
+export SCM_GIT_SHOW_MINIMAL_INFO=true
+
+# Load Bash It
+source "$BASH_IT"/bash_it.sh
 
 
 export RUSTUP_DIST_SERVER=https://mirrors.sjtug.sjtu.edu.cn/rust-static
@@ -32,7 +41,7 @@ alias la='ls -a'
 alias l='ls -alh'
 alias md='mkdir'
 # change terminal and vim's color theme
-alias chbg='zsh ~/.zsh/change_theme.zsh'
+alias chbg="bash $HOME/dotfiles/bash/chbg.sh"
 alias cleanrc="dpkg -l | grep ^rc | cut -d' ' -f3 | sudo xargs dpkg --purge" 
 # aliyun server
 alias aliyy="ssh a@cyh.world"
@@ -40,10 +49,3 @@ alias termux="ssh u0_a241@192.168.2.105 -p8022"
 
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080" 
 alias unsetproxy="unset ALL_PROXY"
-#################################################################
-# Plugin
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^ ' autosuggest-accept
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#808080,bg=gray,underline"
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-completions/zsh-completions.plugin.zsh
