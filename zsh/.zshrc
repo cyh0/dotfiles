@@ -12,8 +12,6 @@ autoload -U compinit compinit
 export PS1="$(print '%{\e[0;34m%}%~%{\e[0m%}') "
 export PS2="$(print '%{\e[0;34m%}>%{\e[0m%}')"
 
-export DEBEMAIL="im.cyh@outlook.com"
-export DEBFULLNAME="YuhanChen"
 
 export RUSTUP_DIST_SERVER=https://mirrors.sjtug.sjtu.edu.cn/rust-static
 export RUSTUP_UPDATE_ROOT=https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup

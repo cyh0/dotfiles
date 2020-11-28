@@ -1,5 +1,5 @@
-!/nvim/plugged
 /nvim/plugged/*
+!/nvim/plugged
 
-!/backup
 /backup/*
+!/backup
