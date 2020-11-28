@@ -1,6 +1,6 @@
 " vim-plug
 "-----------------------------------------------------------------------------
-call plug#begin('~/dotfiles/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim'
 Plug 'preservim/nerdtree'
