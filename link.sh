@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 # initiation
 current_path=$(cd `dirname $0`; pwd)

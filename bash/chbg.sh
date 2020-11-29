@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/sh
 
 theme_bg='dark'
 if [ "$theme_bg" == "light" ];then

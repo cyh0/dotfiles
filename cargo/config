@@ -1,15 +1,15 @@
-[http]
-# 代理设置
-proxy = "127.0.0.1:12333"
-check-revoke = false
- 
-[https]
-# 代理设置
-proxy = "127.0.0.1:12333"
-check-revoke = false
-
-[source.crates-io]
-registry = "https://github.com/rust-lang/crates.io-index"
+# [http]
+# # 代理设置
+# proxy = "127.0.0.1:12333"
+# check-revoke = false
+#  
+# [https]
+# # 代理设置
+# proxy = "127.0.0.1:12333"
+# check-revoke = false
+# 
+# [source.crates-io]
+# registry = "https://github.com/rust-lang/crates.io-index"
 
 # 替换成你偏好的镜像源
 replace-with = 'sjtu'
