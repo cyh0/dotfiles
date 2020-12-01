@@ -134,7 +134,7 @@ nnoremap <silent><nowait> <leader>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <leader>p  :<C-u>CocListResume<CR>
 
 " +============================== coc-common ===========================+"
-autocmd FileType rust,yaml,json,toml,xml,html autocmd BufWritePre <buffer> :Format
+autocmd FileType rust,java,bash,yaml,json,toml,xml,html autocmd BufWritePre <buffer> :Format
 
 " +============================== coc-pairs ===========================+"
 "

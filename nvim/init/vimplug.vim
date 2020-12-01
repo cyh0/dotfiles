@@ -49,3 +49,4 @@ let g:floaterm_width         = 0.5     "default: 0.6
 autocmd FileType scheme noremap <F5> :FloatermNew scheme <space>%:t<cr>
 autocmd FileType rust   noremap <F5> :FloatermNew! cargo run <cr>
 autocmd FileType rust   noremap <F6> :FloatermNew --autoclose=0 cargo check <cr>
+autocmd FileType java   noremap <F5> :FloatermNew! mvn test <cr>
