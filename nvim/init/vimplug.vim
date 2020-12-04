@@ -43,7 +43,7 @@ let g:floaterm_keymap_prev   = '<F9>'
 let g:floaterm_keymap_next   = '<F10>'
 let g:floaterm_keymap_new    = '<F12>'
 let g:floaterm_autoclose     = 1
-let g:floaterm_position      = 'right' "default: center
+let g:floaterm_position      = 'bottomright' "default: center
 let g:floaterm_width         = 0.5     "default: 0.6
 
 autocmd FileType scheme noremap <F5> :FloatermNew scheme <space>%:t<cr>
