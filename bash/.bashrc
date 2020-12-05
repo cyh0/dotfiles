@@ -51,3 +51,4 @@ alias termux="ssh u0_a241@192.168.2.105 -p8022"
 alias setproxy="bash $HOME/dotfiles/bash/proxy" 
 alias unsetproxy="unset ALL_PROXY"
 
+source "$HOME/.cargo/env"

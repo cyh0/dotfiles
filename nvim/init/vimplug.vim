@@ -50,3 +50,10 @@ autocmd FileType scheme noremap <F5> :FloatermNew scheme <space>%:t<cr>
 autocmd FileType rust   noremap <F5> :FloatermNew! cargo run <cr>
 autocmd FileType rust   noremap <F6> :FloatermNew --autoclose=0 cargo check <cr>
 autocmd FileType java   noremap <F5> :FloatermNew! mvn test <cr>
+
+"-----------------------------------------------------------------------------
+" voldikss/vim-floaterm
+"-----------------------------------------------------------------------------
+"
+let g:mkdp_browser='edge'
+"let g:mkdp_open_ip='192.168.2.1'
