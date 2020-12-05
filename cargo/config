@@ -8,8 +8,8 @@
 # proxy = "127.0.0.1:12333"
 # check-revoke = false
 # 
-# [source.crates-io]
-# registry = "https://github.com/rust-lang/crates.io-index"
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
 
 # 替换成你偏好的镜像源
 replace-with = 'sjtu'

@@ -7,7 +7,7 @@ case $- in
 esac
 
 # Path to the bash it configuration
-export BASH_IT="/home/cyh/.bash_it"
+export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
@@ -30,6 +30,7 @@ export RUSTUP_UPDATE_ROOT=https://mirrors.sjtug.sjtu.edu.cn/rust-static/rustup
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export PATH="${JAVA_HOME}/bin:$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
 export EDITOR="vim"
+export me="/mnt/c/Users/imcyh/"
 
 ##################################################################
 # My aliases
@@ -47,5 +48,6 @@ alias cleanrc="dpkg -l | grep ^rc | cut -d' ' -f3 | sudo xargs dpkg --purge"
 alias aliyy="ssh a@cyh.world"
 alias termux="ssh u0_a241@192.168.2.105 -p8022"
 
-alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080" 
+alias setproxy="bash $HOME/dotfiles/bash/proxy" 
 alias unsetproxy="unset ALL_PROXY"
+
